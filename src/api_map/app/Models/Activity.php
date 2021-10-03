@@ -20,5 +20,6 @@ class Activity extends Model
         'organisers',
         'participants',
         'location',
+        'distance'
     ];
 }

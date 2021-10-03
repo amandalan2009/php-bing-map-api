@@ -41,7 +41,7 @@
                 <td>{{ $activity->organisers }}</td>
                 <td>{{ $activity->participants }}</td>
                 <td>{{ $activity->location }}</td>
-                <td>{{ $activity->distance }}</td>
+                <td>{{ $activity->distance }}km</td>
                 <td>{{ $activity->created_at }}</td>
                 <td>{{ $activity->updated_at }}</td>
             </tr>

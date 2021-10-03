@@ -9,5 +9,5 @@ namespace App\Services;
  */
 interface MapServiceInterface
 {
-    public function getPoint(string $address);
+    public function getDistance(string $address);
 }
