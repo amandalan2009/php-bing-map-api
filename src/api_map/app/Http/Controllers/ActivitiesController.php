@@ -54,6 +54,11 @@ class ActivitiesController extends Controller
     public function index()
     {
         $activities = $this->repository->all();
+        $nonDistances = $this->repository->findWhere(['distance' => null]);
+        foreach ($nonDistances as $nonDistance) {
+            $nonDistance->update('distance', $this->mapService->getDistance($nonDistance->location));
+
+        }
 
         return view('activities.index', compact('activities'));
     }
